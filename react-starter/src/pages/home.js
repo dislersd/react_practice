@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+import PostForm from "../components/PostForm";
+
 const Home = () => {
   const [posts, setPosts] = useState([]);
 
@@ -27,6 +29,12 @@ const Home = () => {
 
   return (
     <div>
+      <div className="row">
+        <div className="col s6">
+          <PostForm />
+        </div>
+      </div>
+
       <div className="row">
         {posts.map(post => (
           <div className="col s6" key={post.id}>
