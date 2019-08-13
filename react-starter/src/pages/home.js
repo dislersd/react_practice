@@ -27,11 +27,16 @@ const Home = () => {
     // });
   }
 
+  function addPost(post) {
+    const postsUpdated = [post, ...posts];
+    setPosts(postsUpdated);
+  }
+
   return (
     <div>
       <div className="row">
         <div className="col s6">
-          <PostForm />
+          <PostForm addPost={addPost} />
         </div>
       </div>
 

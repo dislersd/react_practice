@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const PostForm = () => {
+const PostForm = props => {
   const [loading, setLoading] = useState(false);
   const [post, setPost] = useState({
     title: "",
@@ -19,7 +19,7 @@ const PostForm = () => {
     axios
       .post("/post", post)
       .then(res => {
-        console.log(res.data);
+        props.addPost(post);
         setPost({ title: "", body: "" });
         setLoading(false);
       })
