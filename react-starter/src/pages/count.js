@@ -6,8 +6,8 @@ class Count extends Component {
   render() {
     return (
       <div>
-        <ClickCounter />
-        <HoverCounter />
+        <ClickCounter name="Dylan" />
+        <HoverCounter name="Dylan" />
       </div>
     );
   }
