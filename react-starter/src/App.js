@@ -11,6 +11,7 @@ import About from "./pages/about";
 import Home from "./pages/home";
 import Count from "./pages/count";
 import CountWithHook from "./pages/countWithHook";
+import ListRendering from "./pages/listRendering";
 
 
 axios.defaults.baseURL =
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/count" component={Count} />
         <Route exact path="/count-with-hook" component={CountWithHook} />
+        <Route exact path="/list-rendering" component={ListRendering} />
       </div>
     </Router>
   );
