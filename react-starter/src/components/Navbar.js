@@ -14,7 +14,13 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/count">Count HOC</Link>
+            </li>
+            <li>
+              <Link to="/count-with-hook">CountHooks</Link>
+            </li>
+            <li>
+              <Link to="/list-rendering">ListRendering</Link>
             </li>
           </ul>
         </div>
