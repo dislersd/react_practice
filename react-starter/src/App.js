@@ -9,6 +9,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./pages/about";
 import Home from "./pages/home";
+import Count from "./pages/count";
+
 
 axios.defaults.baseURL =
   "https://ndb99xkpdk.execute-api.eu-west-2.amazonaws.com/dev";
@@ -20,6 +22,7 @@ function App() {
       <div className="container">
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/count" component={Count} />
       </div>
     </Router>
   );
